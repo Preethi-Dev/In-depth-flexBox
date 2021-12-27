@@ -23,4 +23,5 @@
 
 .row{
   display: flex;
+  max-width: min(100%, 1200px);
 }
