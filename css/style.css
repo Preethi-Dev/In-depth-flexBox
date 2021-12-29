@@ -15,17 +15,21 @@
       rest of the available space
 */
 
-@media all and (min-width: 32.5em){
     .flex-container{
         display: flex;
-    }
-    .subscribe{
-        width: 100%;
-        max-width: 25rem;
+        flex-direction: column;
     }
 
+    .subscribe,
     .recent-episodes{
         width: 100%;
-        /* flex-grow: 1; */
+    }
+
+@media all and (min-width: 32.5em){
+    .flex-container{
+        flex-direction: row;
+    }
+    .subscribe{
+        max-width: 25rem;
     }
 }
