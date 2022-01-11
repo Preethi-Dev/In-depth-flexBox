@@ -1,0 +1,52 @@
+header {
+  background: black;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+
+
+header {
+  flex-basis: 15rem;
+  flex-grow: 1;
+}
+
+main {
+  flex-basis: 60%;
+  padding: 2em;
+  flex-grow: 9999;
+}
+
+main > * {
+  max-width: 60rem;
+}
+
+
+@media (min-width: 700px){
+  header{
+    position: fixed;
+  height: 100vh;
+  width: 15rem;
+  }
+  header ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  li{
+    flex-basis: 50%;
+  }
+  main{
+    margin-left: 15rem;
+  }
+}
